@@ -1,0 +1,95 @@
+{
+
+    "Details": [{
+            "id": 1230,
+            "name ": "Vijaya Rani ",
+            "gender": "Female",
+            "contactPreference": "Email",
+            "email": "vijayarani@softpath.net",
+            "phoneNumber": 9652733447,
+            "DOB": "10/25/1988",
+            "position": "Team Lead",
+            "imageUrl": "assets/images/mary.png",
+            "package": "15LPA"
+        }, {
+            "id": 1231,
+            "name ": "Gireesh Kapila ",
+            "gender": "Male",
+            "contactPreference": "Email",
+            "email": "gireeshkapila@softpath.net",
+            "phoneNumber": 9652733447,
+            "DOB": "10/25/1982",
+            "position": "Senior Architect",
+            "imageUrl": "assets/images/mary.png",
+            "package": "22LPA"
+        },
+        {
+            "id": 1232,
+            "name ": "Padma Kuna ",
+            "gender": "Female",
+            "contactPreference": "Email",
+            "email": "padmakuna@softpath.net",
+            "phoneNumber": 9652733447,
+            "DOB": "10/25/1990",
+            "position": "QA Lead",
+            "imageUrl": "assets/images/mary.png",
+            "package": "15LPA"
+        },
+        {
+            "id": 1233,
+            "name ": "Kalya Teja ",
+            "gender": "Male",
+            "contactPreference": "Email",
+            "email": "kalyanyeja@softpath.net",
+            "phoneNumber": 9652733447,
+            "DOB": "10/25/1992",
+            "position": "FullStack Engineer",
+            "imageUrl": "assets/images/mary.png",
+            "package": "12LPA"
+        },
+        {
+            "id": 1234,
+            "name ": "Phalgua Kumar",
+            "gender": "Male",
+            "contactPreference": "Email",
+            "email": "phalgunakumar@softpath.net",
+            "phoneNumber": 9652733447,
+            "DOB": "10/25/1985",
+            "position": "Director",
+            "imageUrl": "assets/images/mary.png",
+            "package": "33LPA"
+        },
+        {
+            "id": 1235,
+            "name ": "Pavan Kalyan Chillapalli ",
+            "gender": "Male",
+            "contactPreference": "Email",
+            "email": "pavankalyan.c@softpath.net",
+            "phoneNumber": 9652733447,
+            "DOB": "10/25/1995",
+            "position": "FullStack Engineer",
+            "imageUrl": "assets/images/mary.png",
+            "package": "19LPA"
+        },
+        {
+            "id": 1236,
+            "name ": " Harish Kumar",
+            "gender": "Male",
+            "contactPreference": "Email",
+            "email": "harishkumar@softpath.net",
+            "phoneNumber": 9652733447,
+            "DOB": "10/25/1985",
+            "position": "Associate Director",
+            "imageUrl": "assets/images/mary.png",
+            "package": "44LPA"
+        }
+    ],
+    "comments": [{
+        "id": 1,
+        "body": "some comment",
+        "postId": 1
+    }],
+    "profile": {
+        "name": "typicode"
+    }
+}

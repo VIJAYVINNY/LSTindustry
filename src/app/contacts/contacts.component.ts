@@ -8,11 +8,15 @@ import { ContactService } from '../services/contact.service';
 })
 export class ContactsComponent implements OnInit{
 
-constructor(private contactService:ContactService){}
+constructor(public contactService:ContactService){}
 
 listOfdetails:any;
 
  ngOnInit(): void {
   this.listOfdetails=this.contactService.empDetails();
+  }
+  callingfromComponent(){
+    console.log("Calling through Component Directly");
+    
   }
 }
