@@ -6,8 +6,12 @@ import { HttpClientModule,HttpClient } from '@angular/common/http';
 })
 export class DetailsService {
 
-  url = "http://localhost:3000/Details";
-  detail:any;
+  // url = 'http://localhost:7890/details';        //// List Of Employees URL
+
+  url="http://localhost:3000/trainees";        //// List Of trainees URL
+
+  
+
   constructor(public http: HttpClient) { }
 
   getDetails(){

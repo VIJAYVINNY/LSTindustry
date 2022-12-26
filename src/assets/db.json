@@ -1,8 +1,8 @@
 {
 
-    "Details": [{
+    "details": [{
             "id": 1230,
-            "name ": "Vijaya Rani ",
+            "name": "Vijaya Rani",
             "gender": "Female",
             "contactPreference": "Email",
             "email": "vijayarani@softpath.net",
@@ -13,9 +13,9 @@
             "package": "15LPA"
         }, {
             "id": 1231,
-            "name ": "Gireesh Kapila ",
+            "name": "Gireesh Kapila",
             "gender": "Male",
-            "contactPreference": "Email",
+            "contactPreference": "Phone",
             "email": "gireeshkapila@softpath.net",
             "phoneNumber": 9652733447,
             "DOB": "10/25/1982",
@@ -25,7 +25,7 @@
         },
         {
             "id": 1232,
-            "name ": "Padma Kuna ",
+            "name": "Padma Kuna",
             "gender": "Female",
             "contactPreference": "Email",
             "email": "padmakuna@softpath.net",
@@ -37,7 +37,7 @@
         },
         {
             "id": 1233,
-            "name ": "Kalya Teja ",
+            "name": "Kalya Teja",
             "gender": "Male",
             "contactPreference": "Email",
             "email": "kalyanyeja@softpath.net",
@@ -49,7 +49,7 @@
         },
         {
             "id": 1234,
-            "name ": "Phalgua Kumar",
+            "name": "Phalgua Kumar",
             "gender": "Male",
             "contactPreference": "Email",
             "email": "phalgunakumar@softpath.net",
@@ -61,7 +61,7 @@
         },
         {
             "id": 1235,
-            "name ": "Pavan Kalyan Chillapalli ",
+            "name": "Pavan Kalyan Chillapalli",
             "gender": "Male",
             "contactPreference": "Email",
             "email": "pavankalyan.c@softpath.net",
@@ -73,7 +73,7 @@
         },
         {
             "id": 1236,
-            "name ": " Harish Kumar",
+            "name": " Harish Kumar",
             "gender": "Male",
             "contactPreference": "Email",
             "email": "harishkumar@softpath.net",

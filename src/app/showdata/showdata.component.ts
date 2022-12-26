@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { DetailsService } from '../services/details.service';
 
 @Component({
@@ -11,7 +10,12 @@ export class ShowdataComponent implements OnInit {
 
   constructor(public detailsService:DetailsService){}
  
+  detailList:any;
+
   ngOnInit(): void {
+    this.detailsService.getDetails().subscribe(data =>{
+      this.detailList=data;
+    })
    
   }
 

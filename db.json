@@ -1,19 +1,22 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+    "trainees": [{
+        "id": 2020,
+        "name": "Naresh Yerra",
+        "gender": "Male",
+        "contactPreference": "Phone",
+        "email": "nareshyerra.g@softpath.net",
+        "phoneNumber": 9652700447,
+        "DOB": "10/25/1997",
+        "position": "Trainee Engineer",
+        "imageUrl": "assets/images/mary.png",
+        "package": "3.6LPA"
+    }],
+    "comments": [{
+        "id": 1,
+        "body": "some comment",
+        "postId": 1
+    }],
+    "profile": {
+        "name": "typicode"
     }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
 }

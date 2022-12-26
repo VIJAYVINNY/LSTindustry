@@ -1,0 +1,33 @@
+<h2>The detail of Employee is:</h2>
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Email</th>
+            <th scope="col">PhoneNumber</th>
+            <th scope="col">DOB</th>
+            <th scope="col">Position</th>
+            <th scope="col">Package</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let details of detailList">
+
+            <td>{{details.id}}</td>
+            <td>{{details.name}}</td>
+            <td>{{details.gender}}</td>
+            <td>{{details.contactPreference}}</td>
+            <td>{{details.phoneNumber}}</td>
+            <td>{{details.DOB|date}}</td>
+            <td>{{details.position}}</td>
+            <td>{{details.package}}</td>
+
+        </tr>
+
+    </tbody>
+</table>

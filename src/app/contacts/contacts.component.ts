@@ -15,6 +15,7 @@ listOfdetails:any;
  ngOnInit(): void {
   this.listOfdetails=this.contactService.empDetails();
   }
+  
   callingfromComponent(){
     console.log("Calling through Component Directly");
     
