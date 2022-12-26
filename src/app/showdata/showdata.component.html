@@ -1,15 +1,12 @@
 <h2>The detail of Employee is:</h2>
 
-
-
 <table class="table">
     <thead>
         <tr>
             <th scope="col">ID</th>
             <th scope="col">Name</th>
             <th scope="col">Gender</th>
-            <th scope="col">Email</th>
-            <th scope="col">PhoneNumber</th>
+            <th scope="col">Phone</th>
             <th scope="col">DOB</th>
             <th scope="col">Position</th>
             <th scope="col">Package</th>
@@ -21,13 +18,65 @@
             <td>{{details.id}}</td>
             <td>{{details.name}}</td>
             <td>{{details.gender}}</td>
-            <td>{{details.contactPreference}}</td>
             <td>{{details.phoneNumber}}</td>
             <td>{{details.DOB|date}}</td>
             <td>{{details.position}}</td>
-            <td>{{details.package}}</td>
+            <td>{{details.package|uppercase}}</td>
 
         </tr>
-
     </tbody>
 </table>
+<hr class="ddd">
+<!-- Post data form -->
+<h4 class="post">To Add the Data</h4>
+<div class="container">
+    <form #userForm="ngForm" (ngSubmit)="getPostData(userForm.value)">
+
+        <label for="name">Name:</label>
+        <input type="text" name="name" class="form-control" placeholder="Enter your Name" ngModel><br>
+
+
+        <label for="gender">Gender:</label>
+        <select name="gender" ngModel class="form-control">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Trans">Trans</option>
+            </select>
+
+
+
+        <label for="phone">phone:</label>
+        <input type="phoneNumber" class="form-control" name="phoneNumber" placeholder="Enter your phoneNumber" ngModel>
+
+
+        <label for="date">DOB:</label>
+        <input type="date" name="date" class="form-control" placeholder="Enter your DOB" ngModel><br>
+
+        <label for="position">Position:</label>
+        <input type="text" name="position" class="form-control" placeholder="Enter your position" ngModel><br>
+
+        <!-- <label for="position">position:</label>
+        <select name="Position" type="text" ngModel class="form-control">
+                <option value="Trainee Engineer">Trainee Engineer</option>
+                <option value="FrontEnd Engineer">FrontEnd Developer</option>
+                <option value="BackEnd Engineer">BackEnd Developer</option>
+                <option value="FullStack Engineer">FullStack Developer</option>
+            </select> -->
+
+
+        <label for="package"> Package:</label>
+        <input type="string" name="package" class="form-control" placeholder="Enter your package" ngModel><br>
+
+
+        <button class="btn btn-primary">Adding New User</button>
+        <!-- <button class="btn btn-secondary" (click)="updateContact()">Update the User</button> -->
+    </form>
+
+
+    <!-- <div class="container ">
+    <form #userForm="ngForm " (ngSubmit)="getPostData(userForm.value) ">
+        <label>Name:</label> <input type="text " name="name " placeholder="Enter your Name " ngModel><br><br>
+        <label>Email:</label> <input type="email " name="email " placeholder=" Enter your email " ngModel><br><br>
+        <label>password:</label> <input type="password " name="password " placeholder="Enter your password " ngModel><br><br>
+        <button>Adding New User</button>
+    </form> -->

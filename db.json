@@ -1,22 +1,72 @@
 {
-    "trainees": [{
-        "id": 2020,
-        "name": "Naresh Yerra",
-        "gender": "Male",
-        "contactPreference": "Phone",
-        "email": "nareshyerra.g@softpath.net",
-        "phoneNumber": 9652700447,
-        "DOB": "10/25/1997",
-        "position": "Trainee Engineer",
-        "imageUrl": "assets/images/mary.png",
-        "package": "3.6LPA"
-    }],
-    "comments": [{
-        "id": 1,
-        "body": "some comment",
-        "postId": 1
-    }],
-    "profile": {
-        "name": "typicode"
+  "trainees": [
+    {
+      "id": 1,
+      "name": "Naresh Yerra",
+      "gender": "Male",
+      "contactPreference": "Phone",
+      "email": "nareshyerra.g@softpath.net",
+      "phoneNumber": 9652700447,
+      "DOB": "10/25/1997",
+      "position": "Trainee Engineer",
+      "imageUrl": "assets/images/mary.png",
+      "package": "3.6LPA"
+    },
+    {
+      "id": 2
+    },
+    {
+      "FirstName": "madhu Varre",
+      "gendeer": "Male",
+      "phoneNumber": 8956478965,
+      "dateofbirth": 21101997,
+      "position": "Trainee Engineer",
+      "package": "3.7lpa",
+      "id": 3
+    },
+    {
+      "name": "",
+      "gender": "",
+      "phoneNumber": "",
+      "Name": "",
+      "position": "",
+      "package": "",
+      "id": 4
+    },
+    {
+      "name": "Vinod",
+      "gender": "1",
+      "phoneNumber": "9951165038",
+      "Name": "1996-06-03",
+      " gender ": "2 ",
+      "package ": "4.0Lpa",
+      "id": 5
+    },
+    {
+      "name": "shakthi  man",
+      "gender": "2",
+      "phoneNumber": "9951165033",
+      "Name": "1999-01-01",
+      " gender ": "1 ",
+      "package ": "4.0Lpa",
+      "id": 6
     }
+  ],
+  "credentials": [
+    {
+      "id": 1,
+      "username": "Vijay",
+      "email": "vijay1021.gummadi@gmail.com",
+      "password": "Vijay1021@"
+    },
+    {
+      "name": "ajay",
+      "email": "ajay@gmail.com",
+      "password": "Ajay1021@",
+      "id": 2
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }

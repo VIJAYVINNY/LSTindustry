@@ -15,8 +15,21 @@ export class ShowdataComponent implements OnInit {
   ngOnInit(): void {
     this.detailsService.getDetails().subscribe(data =>{
       this.detailList=data;
-    })
-   
+    })  
   }
+
+  getPostData(data:any){
+    this.detailsService.postDetails(data).subscribe(result=>{
+console.log(result);
+    }) 
+  }
+
+//   updateContact(detailsid:any){
+// this.detailsService.putDetails(detailsid).subscribe(data=>{
+//   console.log(detailsid);
+  
+// })
+//   }
+  
 
 }
