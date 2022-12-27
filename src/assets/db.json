@@ -300,6 +300,16 @@
       "position": "Admin",
       "package": "6lpa",
       "id": 1259
+    },
+    {
+      "name": "ant",
+      "gender": "Male",
+      "email": "ant@gmail.com",
+      "phone": "7894561230",
+      "DOB": "1993-12-01",
+      "position": "Trainee Engineer",
+      "package": "3lpa",
+      "id": 1260
     }
   ],
   "comments": [
