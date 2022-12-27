@@ -150,6 +150,26 @@
       "position": "FullStack Engineer",
       "package": "5.0lpa",
       "id": 1244
+    },
+    {
+      "name": "Mubeen bhai",
+      "gender": "Male",
+      "email": "mubeenbhai@gmail.com",
+      "phoneNumber": "9645783210",
+      "DOB": "1994-08-26",
+      "position": "QA Engineer",
+      "package": "4.0lpa",
+      "id": 1245
+    },
+    {
+      "name": "Naresh Yerra",
+      "gender": "Male",
+      "email": "nareshyerra@softpath.net",
+      "phoneNumber": "8527419630",
+      "DOB": "1996-02-02",
+      "position": "FullStack Engineer",
+      "package": "4.0lpa",
+      "id": 1246
     }
   ],
   "comments": [

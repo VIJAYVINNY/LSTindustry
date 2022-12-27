@@ -9,27 +9,28 @@ import { DetailsService } from '../services/details.service';
 export class ShowdataComponent implements OnInit {
 
   constructor(public detailsService:DetailsService){}
- 
+  successmessage=false;
   detailList:any;
 
   ngOnInit(): void {
     this.detailsService.getDetails().subscribe(data =>{
       this.detailList=data;
-    })  
+    })
   }
 
   getPostData(data:any){
     this.detailsService.postDetails(data).subscribe(result=>{
 console.log(result);
-    }) 
+this.successmessage=true
+    })
   }
 
 //   updateContact(detailsid:any){
 // this.detailsService.putDetails(detailsid).subscribe(data=>{
 //   console.log(detailsid);
-  
+
 // })
 //   }
-  
+
 
 }
