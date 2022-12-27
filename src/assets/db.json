@@ -1,325 +1,272 @@
 {
-  "details": [
-    {
-      "id": 1230,
-      "name": "Vijaya Rani",
-      "gender": "Female",
-      "contactPreference": "Email",
-      "email": "vijayarani@softpath.net",
-      "phoneNumber": 9652733447,
-      "DOB": "10/25/1988",
-      "position": "Team Lead",
-      "imageUrl": "assets/images/mary.png",
-      "package": "15LPA"
-    },
-    {
-      "id": 1231,
-      "name": "Gireesh Kapila",
-      "gender": "Male",
-      "contactPreference": "Phone",
-      "email": "gireeshkapila@softpath.net",
-      "phoneNumber": 9652733447,
-      "DOB": "10/25/1982",
-      "position": "Senior Architect",
-      "imageUrl": "assets/images/mary.png",
-      "package": "22LPA"
-    },
-    {
-      "id": 1232,
-      "name": "Padma Kuna",
-      "gender": "Female",
-      "contactPreference": "Email",
-      "email": "padmakuna@softpath.net",
-      "phoneNumber": 9652733447,
-      "DOB": "10/25/1990",
-      "position": "QA Lead",
-      "imageUrl": "assets/images/mary.png",
-      "package": "15LPA"
-    },
-    {
-      "id": 1233,
-      "name": "Kalya Teja",
-      "gender": "Male",
-      "contactPreference": "Email",
-      "email": "kalyanyeja@softpath.net",
-      "phoneNumber": 9652733447,
-      "DOB": "10/25/1992",
-      "position": "FullStack Engineer",
-      "imageUrl": "assets/images/mary.png",
-      "package": "12LPA"
-    },
-    {
-      "id": 1234,
-      "name": "Phalgua Kumar",
-      "gender": "Male",
-      "contactPreference": "Email",
-      "email": "phalgunakumar@softpath.net",
-      "phoneNumber": 9652733447,
-      "DOB": "10/25/1985",
-      "position": "Director",
-      "imageUrl": "assets/images/mary.png",
-      "package": "33LPA"
-    },
-    {
-      "id": 1235,
-      "name": "Pavan Kalyan Chillapalli",
-      "gender": "Male",
-      "contactPreference": "Email",
-      "email": "pavankalyan.c@softpath.net",
-      "phoneNumber": 9652733447,
-      "DOB": "10/25/1995",
-      "position": "FullStack Engineer",
-      "imageUrl": "assets/images/mary.png",
-      "package": "19LPA"
-    },
-    {
-      "id": 1236,
-      "name": " Harish Kumar",
-      "gender": "Male",
-      "contactPreference": "Email",
-      "email": "harishkumar@softpath.net",
-      "phoneNumber": 9652733447,
-      "DOB": "10 / 25 / 1985",
-      "position": "Associate Director",
-      "imageUrl": "assets/images/mary.png",
-      "package": "44LPA"
-    },
-    {
-      "id": 1237
-    },
-    {
-      "name": "Divya Chidurala",
-      "gender": "Female",
-      "phoneNumber": "8585963547",
-      "date": "1994-10-10",
-      "Position": "FullStack Engineer",
-      "package ": "4.0lpa",
-      "id": 1238
-    },
-    {
-      "name": "raghavendra",
-      "gender": "Male",
-      "phone": "7594863219",
-      "date": "1997-10-10",
-      "Position": "BackEnd Engineer",
-      "package": "5.0 lpa",
-      "id": 1239
-    },
-    {
-      "name": "avinash babu",
-      "gender": "Male",
-      "phoneNumber": "8520147963",
-      "dateofbirth": "1992-10-10",
-      "Position": "FullStack Engineer",
-      "package": "4.5lpa",
-      "id": 1240
-    },
-    {
-      "name": "mounika bandi",
-      "gender": "Female",
-      "phoneNumber": "8510482693",
-      "dateofbirth": "1995-02-02",
-      "Position": "FullStack Engineer",
-      "package": "6.0lpa",
-      "id": 1241
-    },
-    {
-      "name": "Ravi Teja",
-      "gender": "Male",
-      "phoneNumber": "6541209845",
-      "dateofbirth": "1997-06-06",
-      "Position": "FullStack Engineer",
-      "package": "3.0lpa",
-      "id": 1242
-    },
-    {
-      "name": "Chandra Vardhan",
-      "gender": "Male",
-      "phoneNumber": "9513245678",
-      "dateofbirth": "1998-05-05",
-      "position": "Trainee Engineer",
-      "package": "2.9lpa",
-      "id": 1243
-    },
-    {
-      "name": "brahma teja",
-      "gender": "Male",
-      "email": "brahmateja@softpath.net",
-      "phoneNumber": "9632587410",
-      "DOB": "1997-10-10",
-      "position": "FullStack Engineer",
-      "package": "5.0lpa",
-      "id": 1244
-    },
-    {
-      "name": "Mubeen bhai",
-      "gender": "Male",
-      "email": "mubeenbhai@gmail.com",
-      "phoneNumber": "9645783210",
-      "DOB": "1994-08-26",
-      "position": "QA Engineer",
-      "package": "4.0lpa",
-      "id": 1245
-    },
-    {
-      "name": "Naresh Yerra",
-      "gender": "Male",
-      "email": "nareshyerra@softpath.net",
-      "phoneNumber": "8527419630",
-      "DOB": "1996-02-02",
-      "position": "FullStack Engineer",
-      "package": "4.0lpa",
-      "id": 1246
-    },
-    {
-      "name": " Arelli. Nagaraju",
-      "gender": "Male",
-      "email": "nagaraju.arelli@softpath.net",
-      "phoneNumber": "7531598240",
-      "DOB": "1998-02-05",
-      "position": "Adin",
-      "package": "4.0lpa",
-      "id": 1247
-    },
-    {
-      "name": "sandeep",
-      "gender": "Male",
-      "email": "ssandeep.s@softpath.net",
-      "phoneNumber": "7589632140",
-      "DOB": "1996-05-05",
-      "position": "QA Engineer",
-      "package": "5.0lpa",
-      "id": 1248
-    },
-    {
-      "name": "pridhvi",
-      "gender": "Male",
-      "email": "prudhvi.g@softpath.net",
-      "phoneNumber": "9963885241",
-      "DOB": "2000-02-02",
-      "position": "Adin",
-      "package": "5.0lpa",
-      "id": 1249
-    },
-    {
-      "name": "asha ",
-      "gender": "Female",
-      "email": "asha@gmail.com",
-      "phoneNumber": "9490519617",
-      "DOB": "20000-02-02",
-      "position": "BackEnd Engineer",
-      "package": "6.0lpa",
-      "id": 1250
-    },
-    {
-      "name": "Mounika Bandi",
-      "gender": "Female",
-      "email": "mounika.b@softpath.net",
-      "phoneNumber": "6547998520",
-      "DOB": "1995-02-02",
-      "position": "FullStack Engineer",
-      "package": "5.0lpa",
-      "id": 1251
-    },
-    {
-      "name": "Rajeev",
-      "gender": "Male",
-      "email": "rajeev@softpath.net",
-      "phoneNumber": "9512369852",
-      "DOB": "1980-01-01",
-      "position ": "Admin",
-      "package ": "22lpa",
-      "id": 1252
-    },
-    {
-      "name": "mahesh Rapati",
-      "gender": "Male",
-      "email": "maheshrapati@softpath.net",
-      "phoneNumber": "7521489636",
-      "DOB": "1995-02-02",
-      "position ": "QA Engineer",
-      "package": "9lpa",
-      "id": 1253
-    },
-    {
-      "name": "surendra",
-      "gender": "Male",
-      "email": "surendra@softpath.net",
-      "phoneNumber": "7410258963",
-      "DOB": "1995-02-02",
-      "position": "QA Engineer",
-      "package": "5lpa",
-      "id": 1254
-    },
-    {
-      "name": "ramana",
-      "gender": "",
-      "email": "ramana@gmail.com",
-      "phone": "",
-      "DOB": "1998-02-02",
-      "position": "",
-      "package": "5lpa",
-      "id": 1255
-    },
-    {
-      "name": "meghana",
-      "gender": "",
-      "email": "megh@gmail.com",
-      "phone": "",
-      "DOB": "2014-03-02",
-      "position": "",
-      "package": "4lpa",
-      "id": 1256
-    },
-    {
-      "name": "santhoshini",
-      "gender": "",
-      "email": "santoshini@gmail.com",
-      "phone": "",
-      "DOB": "",
-      "position": "",
-      "package": "2lpa",
-      "id": 1257
-    },
-    {
-      "name": "mounika",
-      "gender": "Female",
-      "email": "mouni@gmail.com",
-      "phone": "123456799",
-      "DOB": "2009-09-28",
-      "position": "Cyber Security",
-      "package": "8lpa",
-      "id": 1258
-    },
-    {
-      "name": "soumya",
-      "gender": "Female",
-      "email": "soumya@gmail.com",
-      "phone": "9874561230",
-      "DOB": "2028-09-04",
-      "position": "Admin",
-      "package": "6lpa",
-      "id": 1259
-    },
-    {
-      "name": "ant",
-      "gender": "Male",
-      "email": "ant@gmail.com",
-      "phone": "7894561230",
-      "DOB": "1993-12-01",
-      "position": "Trainee Engineer",
-      "package": "3lpa",
-      "id": 1260
+    "details": [{
+            "id": 1230,
+            "name": "Vijaya Rani",
+            "gender": "Female",
+            "contactPreference": "Email",
+            "email": "vijayarani@softpath.net",
+            "phoneNumber": 9652733447,
+            "DOB": "10/25/1988",
+            "position": "Team Lead",
+            "imageUrl": "assets/images/mary.png",
+            "package": "15LPA"
+        },
+        {
+            "id": 1231,
+            "name": "Gireesh Kapila",
+            "gender": "Male",
+            "contactPreference": "Phone",
+            "email": "gireeshkapila@softpath.net",
+            "phoneNumber": 9652733447,
+            "DOB": "10/25/1982",
+            "position": "Senior Architect",
+            "imageUrl": "assets/images/mary.png",
+            "package": "22LPA"
+        },
+        {
+            "id": 1232,
+            "name": "Padma Kuna",
+            "gender": "Female",
+            "contactPreference": "Email",
+            "email": "padmakuna@softpath.net",
+            "phoneNumber": 9652733447,
+            "DOB": "10/25/1990",
+            "position": "QA Lead",
+            "imageUrl": "assets/images/mary.png",
+            "package": "15LPA"
+        },
+        {
+            "id": 1233,
+            "name": "Kalya Teja",
+            "gender": "Male",
+            "contactPreference": "Email",
+            "email": "kalyanyeja@softpath.net",
+            "phoneNumber": 9652733447,
+            "DOB": "10/25/1992",
+            "position": "FullStack Engineer",
+            "imageUrl": "assets/images/mary.png",
+            "package": "12LPA"
+        },
+        {
+            "id": 1234,
+            "name": "Phalgua Kumar",
+            "gender": "Male",
+            "contactPreference": "Email",
+            "email": "phalgunakumar@softpath.net",
+            "phoneNumber": 9652733447,
+            "DOB": "10/25/1985",
+            "position": "Director",
+            "imageUrl": "assets/images/mary.png",
+            "package": "33LPA"
+        },
+        {
+            "id": 1235,
+            "name": "Pavan Kalyan Chillapalli",
+            "gender": "Male",
+            "contactPreference": "Email",
+            "email": "pavankalyan.c@softpath.net",
+            "phoneNumber": 9652733447,
+            "DOB": "10/25/1995",
+            "position": "FullStack Engineer",
+            "imageUrl": "assets/images/mary.png",
+            "package": "19LPA"
+        },
+        {
+            "id": 1236,
+            "name": " Harish Kumar",
+            "gender": "Male",
+            "contactPreference": "Email",
+            "email": "harishkumar@softpath.net",
+            "phoneNumber": 9652733447,
+            "DOB": "10 / 25 / 1985",
+            "position": "Associate Director",
+            "imageUrl": "assets/images/mary.png",
+            "package": "44LPA"
+        },
+        {
+            "id": 1237
+        },
+        {
+            "name": "Divya Chidurala",
+            "gender": "Female",
+            "phoneNumber": "8585963547",
+            "date": "1994-10-10",
+            "Position": "FullStack Engineer",
+            "package ": "4.0lpa",
+            "id": 1238
+        },
+        {
+            "name": "raghavendra",
+            "gender": "Male",
+            "phone": "7594863219",
+            "date": "1997-10-10",
+            "Position": "BackEnd Engineer",
+            "package": "5.0 lpa",
+            "id": 1239
+        },
+        {
+            "name": "avinash babu",
+            "gender": "Male",
+            "phoneNumber": "8520147963",
+            "dateofbirth": "1992-10-10",
+            "Position": "FullStack Engineer",
+            "package": "4.5lpa",
+            "id": 1240
+        },
+        {
+            "name": "mounika bandi",
+            "gender": "Female",
+            "phoneNumber": "8510482693",
+            "dateofbirth": "1995-02-02",
+            "Position": "FullStack Engineer",
+            "package": "6.0lpa",
+            "id": 1241
+        },
+        {
+            "name": "Ravi Teja",
+            "gender": "Male",
+            "phoneNumber": "6541209845",
+            "dateofbirth": "1997-06-06",
+            "Position": "FullStack Engineer",
+            "package": "3.0lpa",
+            "id": 1242
+        },
+        {
+            "name": "Chandra Vardhan",
+            "gender": "Male",
+            "phoneNumber": "9513245678",
+            "dateofbirth": "1998-05-05",
+            "position": "Trainee Engineer",
+            "package": "2.9lpa",
+            "id": 1243
+        },
+        {
+            "name": "brahma teja",
+            "gender": "Male",
+            "email": "brahmateja@softpath.net",
+            "phoneNumber": "9632587410",
+            "DOB": "1997-10-10",
+            "position": "FullStack Engineer",
+            "package": "5.0lpa",
+            "id": 1244
+        },
+        {
+            "name": "Mubeen bhai",
+            "gender": "Male",
+            "email": "mubeenbhai@gmail.com",
+            "phoneNumber": "9645783210",
+            "DOB": "1994-08-26",
+            "position": "QA Engineer",
+            "package": "4.0lpa",
+            "id": 1245
+        },
+        {
+            "name": "Naresh Yerra",
+            "gender": "Male",
+            "email": "nareshyerra@softpath.net",
+            "phoneNumber": "8527419630",
+            "DOB": "1996-02-02",
+            "position": "FullStack Engineer",
+            "package": "4.0lpa",
+            "id": 1246
+        },
+        {
+            "name": " Arelli. Nagaraju",
+            "gender": "Male",
+            "email": "nagaraju.arelli@softpath.net",
+            "phoneNumber": "7531598240",
+            "DOB": "1998-02-05",
+            "position": "Adin",
+            "package": "4.0lpa",
+            "id": 1247
+        },
+        {
+            "name": "sandeep",
+            "gender": "Male",
+            "email": "ssandeep.s@softpath.net",
+            "phoneNumber": "7589632140",
+            "DOB": "1996-05-05",
+            "position": "QA Engineer",
+            "package": "5.0lpa",
+            "id": 1248
+        },
+        {
+            "name": "pridhvi",
+            "gender": "Male",
+            "email": "prudhvi.g@softpath.net",
+            "phoneNumber": "9963885241",
+            "DOB": "2000-02-02",
+            "position": "Adin",
+            "package": "5.0lpa",
+            "id": 1249
+        },
+        {
+            "name": "asha ",
+            "gender": "Female",
+            "email": "asha@gmail.com",
+            "phoneNumber": "9490519617",
+            "DOB": "20000-02-02",
+            "position": "BackEnd Engineer",
+            "package": "6.0lpa",
+            "id": 1250
+        },
+        {
+            "name": "Mounika Bandi",
+            "gender": "Female",
+            "email": "mounika.b@softpath.net",
+            "phoneNumber": "6547998520",
+            "DOB": "1995-02-02",
+            "position": "FullStack Engineer",
+            "package": "5.0lpa",
+            "id": 1251
+        },
+        {
+            "name": "Rajeev",
+            "gender": "Male",
+            "email": "rajeev@softpath.net",
+            "phoneNumber": "9512369852",
+            "DOB": "1980-01-01",
+            "position ": "Admin",
+            "package ": "22lpa",
+            "id": 1252
+        },
+        {
+            "name": "mahesh Rapati",
+            "gender": "Male",
+            "email": "maheshrapati@softpath.net",
+            "phoneNumber": "7521489636",
+            "DOB": "1995-02-02",
+            "position ": "QA Engineer",
+            "package": "9lpa",
+            "id": 1253
+        },
+        {
+            "name": "surendra",
+            "gender": "Male",
+            "email": "surendra@softpath.net",
+            "phoneNumber": "7410258963",
+            "DOB": "1995-02-02",
+            "position": "QA Engineer",
+            "package": "5lpa",
+            "id": 1254
+        },
+        {
+            "name": "ramana",
+            "gender": "",
+            "email": "ramana@gmail.com",
+            "phone": "",
+            "DOB": "1998-02-02",
+            "position": "",
+            "package": "5lpa",
+            "id": 1255
+        }
+    ],
+    "comments": [{
+        "id": 1,
+        "body": "some comment",
+        "postId": 1
+    }],
+    "profile": {
+        "name": "typicode"
     }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
 }
