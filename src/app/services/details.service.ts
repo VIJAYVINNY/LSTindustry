@@ -28,8 +28,8 @@ export class DetailsService {
     return this.http.post(this.url, adding);
   }
 
-  putDetails(detailsid: any, update: any) {
-    const endurl = this.url + detailsid;
-    return this.http.put(endurl, update);
+  updateDetails( id:any,updateData:any,) {
+    const endurl = this.url +"/"+ id;
+    return this.http.put(endurl, updateData);
   }
 }

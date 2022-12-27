@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup ,FormBuilder} from '@angular/forms';
 import { DetailsService } from '../services/details.service';
 
 @Component({
@@ -8,29 +9,47 @@ import { DetailsService } from '../services/details.service';
 })
 export class ShowdataComponent implements OnInit {
 
-  constructor(public detailsService:DetailsService){}
-  successmessage=false;
+  constructor(public detailsService:DetailsService,private formBuilder:FormBuilder){}
+
   detailList:any;
 
+formValue!:FormGroup
+
   ngOnInit(): void {
+    this.formValue=this.formBuilder.group({
+      name:[''],
+      gender:[''],
+      email:[''],
+      phone:[''],
+      DOB:[''],
+      position:[''],
+      package:[''],
+    })
+
+    // Get calling
     this.detailsService.getDetails().subscribe(data =>{
       this.detailList=data;
     })
   }
 
+// Post calling
   getPostData(data:any){
-    this.detailsService.postDetails(data).subscribe(result=>{
-console.log(result);
-this.successmessage=true
+    this.detailsService.postDetails(data).subscribe(adding=>{
+console.log(adding);
     })
   }
 
-//   updateContact(detailsid:any){
-// this.detailsService.putDetails(detailsid).subscribe(data=>{
-//   console.log(detailsid);
+//  PUT Method caling
 
-// })
-//   }
+editDetails(id:any){
+
+  // this.detailsService.updateDetails().subscribe(data=>{
+  // })
+}
+
+delDetails(){
+
+}
 
 
 }

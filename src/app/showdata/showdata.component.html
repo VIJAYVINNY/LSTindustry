@@ -1,8 +1,4 @@
-<h2>The detail of Employee is:</h2>
-
-<h1 *ngIf="successmessage">
-    Updated Successfully
-</h1>
+<h2>The Detail Of Employee is:</h2>
 
 <table class="table">
     <thead>
@@ -10,11 +6,11 @@
             <th scope="col">ID</th>
             <th scope="col">Name</th>
             <th scope="col">Gender</th>
-            <th scope="col">Phone</th>
+            <th scope="col">Email</th>
             <th scope="col">DOB</th>
             <th scope="col">Position</th>
             <th scope="col">Package</th>
-            <th class="col">Action</th>
+            <!-- <th class="col">Action</th> -->
         </tr>
     </thead>
     <tbody>
@@ -27,69 +23,74 @@
             <td>{{details.position}}</td>
             <td>{{details.package|uppercase}}</td>
             <td>
-                <button type="button" class="btn btn-success"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
-                  <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
-                  </svg>Edit</button>&nbsp;
-                <button type="button" class="btn btn-danger"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                  <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
-                  <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
-                  </svg>Delete</button>
+                <button class="btn btn-success">Edit</button>&nbsp;
+                <button class="btn btn-danger " (click)="delDetails()">Delete</button>
             </td>
 
         </tr>
     </tbody>
 </table>
+
 <hr class="ddd">
 <!-- Post data form -->
-<h4 class="post">To Add the Data</h4>
-<div class="container">
-    <form #userForm="ngForm" (ngSubmit)="getPostData(userForm.value)">
+<h4 class="post ">To Add the Data</h4>
+<div class="container ">
+    <form #userForm="ngForm" (ngSubmit)="getPostData(userForm.value)" [formGroup]="formValue">
+        <div class="mb-3">
+            <label for="name ">name:</label>
+            <input type="text " formControlName="name" class="form-control " placeholder="Enter your Name" ngModel><br>
+        </div>
 
-        <label for="name">name:</label>
-        <input type="text" name="name" class="form-control" placeholder="Enter your Name" ngModel><br>
+        <div class="mb-3">
+            <label for="gender ">gender:</label>
+            <select name="gender " ngModel class="form-control">
+      <option value="Male ">Male</option>
+      <option value="Female ">Female</option>
+      <option value="Trans ">Trans</option>
+    </select>
+        </div>
 
-        <label for="gender">gender:</label>
-        <select name="gender" ngModel class="form-control">
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
-                <option value="Trans">Trans</option>
-            </select>
+        <div class="mb-3">
+            <label for="email">email:</label>
+            <input type="email" class="form-control" formControlName="email" placeholder=" Enter your email " ngModel>
+        </div>
 
-        <label for="email">email:</label>
-        <input type="email" class="form-control" name="email" placeholder="Enter your email" ngModel>
+        <div class="mb-3">
+            <label for="phone ">phoneNumber:</label>
+            <input type="phoneNumber " class="form-control" formControlName="phoneNumber" placeholder="Enter your phoneNumber " ngModel>
+        </div>
 
-        <label for="phone">phoneNumber:</label>
-        <input type="phoneNumber" class="form-control" name="phoneNumber" placeholder="Enter your phoneNumber" ngModel>
+        <div class="mb-3">
+            <label for="date">DOB:</label>
+            <input type="date" formControlName="DOB" class="form-control" placeholder="Enter your DOB " ngModel><br></div>
 
+        <div class="mb-3">
+            <label for="position">position:</label>
+            <select name="position " type="text " ngModel class="form-control ">
+      <option value="Trainee Engineer">Trainee Engineer</option>
+      <option value="FrontEnd Engineer">FrontEnd Developer</option>
+      <option value="BackEnd Engineer ">BackEnd Developer</option>
+      <option value="FullStack Engineer ">FullStack Developer</option>
+      <option value="QA Engineer ">QA Engineer</option>
+      <option value="Admin">Admin</option>
+      <option value="Cyber Security">Cyber Security</option>
+    </select>
+        </div>
 
-        <label for="date">DOB:</label>
-        <input type="date" name="DOB" class="form-control" placeholder="Enter your DOB" ngModel><br>
-
-        <!-- <label for="position">Position:</label>
-        <input type="text" name="position" class="form-control" placeholder="Enter your position" ngModel><br> -->
-
-        <label for="position">position:</label>
-        <select name="position" type="text" ngModel class="form-control">
-                <option value="Trainee Engineer">Trainee Engineer</option>
-                <option value="FrontEnd Engineer">FrontEnd Developer</option>
-                <option value="BackEnd Engineer">BackEnd Developer</option>
-                <option value="FullStack Engineer">FullStack Developer</option>
-                <option value="QA Engineer">QA Engineer</option>
-            </select>
-
-        <label for="package"> Package:</label>
-        <input type="string" name="package" class="form-control" placeholder="Enter your package" ngModel><br>
-
+        <div class="mb-3">
+            <label for="package">Package:</label>
+            <input type="string" formControlName="package" class="form-control " placeholder="Enter your package" ngModel><br>
+        </div>
 
         <button class="btn btn-primary">Adding New User</button>
-        <!-- <button class="btn btn-secondary" (click)="updateContact()">Update the User</button> -->
+        <!-- <button class="btn btn-secondary " (click)="putDetails() ">Update the User</button> -->
     </form>
 
 
     <!-- <div class="container ">
     <form #userForm="ngForm " (ngSubmit)="getPostData(userForm.value) ">
         <label>Name:</label> <input type="text " name="name " placeholder="Enter your Name " ngModel><br><br>
-        <label>Email:</label> <input type="email " name="email " placeholder=" Enter your email " ngModel><br><br>
-        <label>password:</label> <input type="password " name="password " placeholder="Enter your password " ngModel><br><br>
-        <button>Adding New User</button>
+            <label>Email:</label> <input type="email " name="email " placeholder=" Enter your email " ngModel><br><br>
+            <label>password:</label> <input type="password " name="password " placeholder="Enter your password " ngModel><br><br>
+            <button>Adding New User</button>
     </form> -->
