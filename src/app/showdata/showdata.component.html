@@ -14,15 +14,13 @@
     </thead>
     <tbody>
         <tr *ngFor="let details of detailList">
-
             <td>{{details.id}}</td>
             <td>{{details.name}}</td>
             <td>{{details.gender}}</td>
             <td>{{details.phoneNumber}}</td>
-            <td>{{details.DOB|date}}</td>
+            <td>{{details.DOB}}</td>
             <td>{{details.position}}</td>
             <td>{{details.package|uppercase}}</td>
-
         </tr>
     </tbody>
 </table>
@@ -32,36 +30,36 @@
 <div class="container">
     <form #userForm="ngForm" (ngSubmit)="getPostData(userForm.value)">
 
-        <label for="name">Name:</label>
+        <label for="name">name:</label>
         <input type="text" name="name" class="form-control" placeholder="Enter your Name" ngModel><br>
 
-
-        <label for="gender">Gender:</label>
+        <label for="gender">gender:</label>
         <select name="gender" ngModel class="form-control">
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
                 <option value="Trans">Trans</option>
             </select>
 
+        <label for="email">email:</label>
+        <input type="email" class="form-control" name="email" placeholder="Enter your email" ngModel>
 
-
-        <label for="phone">phone:</label>
+        <label for="phone">phoneNumber:</label>
         <input type="phoneNumber" class="form-control" name="phoneNumber" placeholder="Enter your phoneNumber" ngModel>
 
 
         <label for="date">DOB:</label>
-        <input type="date" name="date" class="form-control" placeholder="Enter your DOB" ngModel><br>
+        <input type="date" name="DOB" class="form-control" placeholder="Enter your DOB" ngModel><br>
 
-        <label for="position">Position:</label>
-        <input type="text" name="position" class="form-control" placeholder="Enter your position" ngModel><br>
+        <!-- <label for="position">Position:</label>
+        <input type="text" name="position" class="form-control" placeholder="Enter your position" ngModel><br> -->
 
-        <!-- <label for="position">position:</label>
-        <select name="Position" type="text" ngModel class="form-control">
+        <label for="position">position:</label>
+        <select name="position" type="text" ngModel class="form-control">
                 <option value="Trainee Engineer">Trainee Engineer</option>
                 <option value="FrontEnd Engineer">FrontEnd Developer</option>
                 <option value="BackEnd Engineer">BackEnd Developer</option>
                 <option value="FullStack Engineer">FullStack Developer</option>
-            </select> -->
+            </select>
 
 
         <label for="package"> Package:</label>

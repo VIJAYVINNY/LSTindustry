@@ -140,6 +140,16 @@
       "position": "Trainee Engineer",
       "package": "2.9lpa",
       "id": 1243
+    },
+    {
+      "name": "brahma teja",
+      "gender": "Male",
+      "email": "brahmateja@softpath.net",
+      "phoneNumber": "9632587410",
+      "DOB": "1997-10-10",
+      "position": "FullStack Engineer",
+      "package": "5.0lpa",
+      "id": 1244
     }
   ],
   "comments": [
