@@ -24,7 +24,7 @@
             <td>{{details.package|uppercase}}</td>
             <td>
                 <button class="btn btn-success">Edit</button>&nbsp;
-                <button class="btn btn-danger " (click)="delDetails()">Delete</button>
+                <button class="btn btn-danger" (click)="delDetails()">Delete</button>
             </td>
 
         </tr>
@@ -33,17 +33,17 @@
 
 <hr class="ddd">
 <!-- Post data form -->
-<h4 class="post ">To Add the Data</h4>
-<div class="container ">
+<h4 class="post">To Add the Data</h4>
+<div class="container">
     <form #userForm="ngForm" (ngSubmit)="getPostData(userForm.value)" [formGroup]="formValue">
         <div class="mb-3">
-            <label for="name">name:</label>
-            <input type="text" formControlName="name" class="form-control " placeholder="Enter your Name" ngModel><br>
+            <label for="name ">name:</label>
+            <input type="text " formControlName="name" class="form-control " placeholder="Enter your Name" ngModel><br>
         </div>
 
         <div class="mb-3">
-            <label for="gender">gender:</label>
-            <select name="gender" ngModel class="form-control">
+            <label for="gender ">gender:</label>
+            <select name="gender " ngModel class="form-control">
       <option value="Male ">Male</option>
       <option value="Female ">Female</option>
       <option value="Trans ">Trans</option>
@@ -52,12 +52,12 @@
 
         <div class="mb-3">
             <label for="email">email:</label>
-            <input type="email" class="form-control" formControlName="email" placeholder=" Enter your email " ngModel>
+            <input type="email" class="form-control" formControlName="email" placeholder="Enter your email" ngModel>
         </div>
 
         <div class="mb-3">
-            <label for="phone">phoneNumber:</label>
-            <input type="phoneNumber" class="form-control" formControlName="phoneNumber" placeholder="Enter your phoneNumber" ngModel>
+            <label for="phone ">phoneNumber:</label>
+            <input type="phoneNumber " class="form-control" formControlName="phoneNumber" placeholder="Enter your phoneNumber " ngModel>
         </div>
 
         <div class="mb-3">
@@ -66,7 +66,7 @@
 
         <div class="mb-3">
             <label for="position">position:</label>
-            <select type="text" ngModel formControlName="position" class="form-control ">
+            <select name="position " type="text " ngModel class="form-control ">
       <option value="Trainee Engineer">Trainee Engineer</option>
       <option value="FrontEnd Engineer">FrontEnd Developer</option>
       <option value="BackEnd Engineer">BackEnd Developer</option>
