@@ -15,28 +15,28 @@
     </thead>
     <tbody>
         <tr *ngFor="let details of detailList">
-            <td>{{details.id}}</td>
-            <td>{{details.name}}</td>
-            <td>{{details.gender}}</td>
-            <td>{{details.phoneNumber}}</td>
-            <td>{{details.DOB}}</td>
-            <td>{{details.position}}</td>
-            <td>{{details.package|uppercase}}</td>
+            <td>{{ details.id }}</td>
+            <td>{{ details.name }}</td>
+            <td>{{ details.gender }}</td>
+            <td>{{ details.phoneNumber }}</td>
+            <td>{{ details.DOB }}</td>
+            <td>{{ details.position }}</td>
+            <td>{{ details.package | uppercase }}</td>
             <td>
                 <button class="btn btn-success">Edit</button>&nbsp;
                 <button class="btn btn-danger" (click)="delDetails()">Delete</button>
             </td>
-
         </tr>
     </tbody>
 </table>
 
-<hr class="ddd">
+<hr class="ddd" />
 <!-- Post data form -->
 <h4 class="post">To Add the Data</h4>
 <div class="container">
     <form #userForm="ngForm" (ngSubmit)="getPostData(userForm.value)" [formGroup]="formValue">
         <div class="mb-3">
+<<<<<<< Updated upstream
             <label for="name ">name:</label>
             <input type="text " formControlName="name" class="form-control " placeholder="Enter your Name" ngModel><br>
         </div>
@@ -48,24 +48,43 @@
       <option value="Female ">Female</option>
       <option value="Trans ">Trans</option>
     </select>
-        </div>
-
-        <div class="mb-3 ">
-            <label>email:</label>
-            <input type="email " class="form-control " formControlName="email " placeholder="Enter your email " ngModel>
+=======
+            <label>name:</label>
+            <input type="text" formControlName="name" class="form-control" placeholder="Enter your Name" ngModel /><br />
         </div>
 
         <div class="mb-3">
+            <label>gender:</label>
+            <select formControlName="gender " ngModel class="form-control">
+        <option value="Mal">Male</option>
+        <option value="Female">Female</option>
+        <option value="Trans">Trans</option>
+      </select>
+>>>>>>> Stashed changes
+        </div>
+
+        <div class="mb-3">
+            <label>email:</label>
+            <input type="email" class="form-control" formControlName="email" placeholder="Enter your email" ngModel />
+        </div>
+
+        <div class="mb-3">
+<<<<<<< Updated upstream
             <label for="phone ">phoneNumber:</label>
             <input type="phoneNumber " class="form-control" formControlName="phoneNumber" placeholder="Enter your phoneNumber " ngModel>
-        </div>
-
-        <div class="mb-3 ">
-            <label>DOB:</label>
-            <input type="date" formControlName="DOB " class="form-control " placeholder="Enter your DOB " ngModel><br>
+=======
+            <label>phoneNumber:</label>
+            <input type="phoneNumber" class="form-control" formControlName="phoneNumber" placeholder="Enter your phoneNumber" ngModel />
+>>>>>>> Stashed changes
         </div>
 
         <div class="mb-3">
+            <label>DOB:</label>
+            <input type="date" formControlName="DOB" class="form-control" placeholder="Enter your DOB" ngModel /><br />
+        </div>
+
+        <div class="mb-3">
+<<<<<<< Updated upstream
             <label for="position">position:</label>
             <select name="position " type="text " ngModel class="form-control ">
       <option value="Trainee Engineer">Trainee Engineer</option>
@@ -76,16 +95,27 @@
       <option value="Admin">Admin</option>
       <option value="Cyber Security">Cyber Security</option>
     </select>
+=======
+            <label>position:</label>
+            <select name="position" type="text" formControlName="position" ngModel class="form-control">
+        <option value="Trainee Engineer">Trainee Engineer</option>
+        <option value="FrontEnd Engineer">FrontEnd Developer</option>
+        <option value="BackEnd Engineer">BackEnd Developer</option>
+        <option value="FullStack Engineer">FullStack Developer</option>
+        <option value="QA Engineer">QA Engineer</option>
+        <option value="Admin">Admin</option>
+        <option value="Cyber Security">Cyber Security</option>
+      </select>
+>>>>>>> Stashed changes
         </div>
 
-        <div class="mb-3 ">
+        <div class="mb-3">
             <label>Package:</label>
-            <input type="string " formControlName="package " class="form-control " placeholder="Enter your package " ngModel><br>
+            <input type="string" formControlName="package" class="form-control" placeholder="Enter your package" ngModel /><br />
         </div>
 
-        <button class="btn btn-primary ">Adding New User</button>
+        <button class="btn btn-primary">Adding New User</button>
     </form>
-
 
     <!-- <div class="container ">
     <form #userForm="ngForm " (ngSubmit)="getPostData(userForm.value) ">
@@ -94,3 +124,4 @@
             <label>password:</label> <input type="password " name="password " placeholder="Enter your password " ngModel><br><br>
             <button>Adding New User</button>
     </form> -->
+</div>
