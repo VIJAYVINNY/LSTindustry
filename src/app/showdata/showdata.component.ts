@@ -35,7 +35,8 @@ formValue!:FormGroup
 // Post calling
   getPostData(data:any){
     this.detailsService.postDetails(data).subscribe(adding=>{
-console.log(adding);
+      this.detailList=data
+    console.log(adding);
     })
   }
 
