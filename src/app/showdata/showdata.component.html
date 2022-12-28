@@ -37,16 +37,16 @@
     <form #userForm="ngForm" (ngSubmit)="getPostData(userForm.value)" [formGroup]="formValue">
 
         <div class="mb-3">
-            <label for="name ">name:</label>
-            <input type="text " formControlName="name" class="form-control " placeholder="Enter your Name" ngModel><br>
+            <label for="name">name:</label>
+            <input type="text" formControlName="name" class="form-control" placeholder="Enter your Name" ngModel><br>
         </div>
 
         <div class="mb-3">
-            <label for="gender ">gender:</label>
-            <select name="gender " ngModel class="form-control">
-      <option value="Male ">Male</option>
-      <option value="Female ">Female</option>
-      <option value="Trans ">Trans</option>
+            <label for="gender">gender:</label>
+            <select name="gender" ngModel class="form-control">
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Trans">Trans</option>
     </select>
             <label>name:</label>
             <input type="text" formControlName="name" class="form-control" placeholder="Enter your Name" ngModel /><br />
@@ -54,7 +54,7 @@
 
         <div class="mb-3">
             <label>gender:</label>
-            <select formControlName="gender " ngModel class="form-control">
+            <select formControlName="gender" ngModel class="form-control">
         <option value="Mal">Male</option>
         <option value="Female">Female</option>
         <option value="Trans">Trans</option>
@@ -67,8 +67,8 @@
         </div>
 
         <div class="mb-3">
-            <label for="phone ">phoneNumber:</label>
-            <input type="phoneNumber " class="form-control" formControlName="phoneNumber" placeholder="Enter your phoneNumber " ngModel> <label>phoneNumber:</label>
+            <label for="phone">phoneNumber:</label>
+            <input type="phoneNumber" class="form-control" formControlName="phoneNumber" placeholder="Enter your phoneNumber" ngModel> <label>phoneNumber:</label>
             <input type="phoneNumber" class="form-control" formControlName="phoneNumber" placeholder="Enter your phoneNumber" ngModel />
         </div>
 
@@ -100,11 +100,11 @@
         <button class="btn btn-primary">Adding New User</button>
     </form>
 
-    <!-- <div class="container ">
-    <form #userForm="ngForm " (ngSubmit)="getPostData(userForm.value) ">
-        <label>Name:</label> <input type="text " name="name " placeholder="Enter your Name " ngModel><br><br>
-            <label>Email:</label> <input type="email " name="email " placeholder=" Enter your email " ngModel><br><br>
-            <label>password:</label> <input type="password " name="password " placeholder="Enter your password " ngModel><br><br>
+    <!-- <div class="container">
+    <form #userForm="ngForm" (ngSubmit)="getPostData(userForm.value)">
+        <label>Name:</label> <input type="text" name="name" placeholder="Enter your Name" ngModel><br><br>
+            <label>Email:</label> <input type="email" name="email" placeholder=" Enter your email" ngModel><br><br>
+            <label>password:</label> <input type="password" name="password" placeholder="Enter your password" ngModel><br><br>
             <button>Adding New User</button>
     </form> -->
 </div>
