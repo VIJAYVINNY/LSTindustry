@@ -35,9 +35,10 @@
 <h4 class="post">To Add the Data</h4>
 <div class="container">
     <form #userForm="ngForm" (ngSubmit)="getPostData(userForm.value)" [formGroup]="formValue">
+
         <div class="mb-3">
-            <<<<<<< Updated upstream <label for="name ">name:</label>
-                <input type="text " formControlName="name" class="form-control " placeholder="Enter your Name" ngModel><br>
+            <label for="name ">name:</label>
+            <input type="text " formControlName="name" class="form-control " placeholder="Enter your Name" ngModel><br>
         </div>
 
         <div class="mb-3">
@@ -67,9 +68,8 @@
 
         <div class="mb-3">
             <label for="phone ">phoneNumber:</label>
-            <input type="phoneNumber " class="form-control" formControlName="phoneNumber" placeholder="Enter your phoneNumber " ngModel> =======
-            <label>phoneNumber:</label>
-            <input type="phoneNumber" class="form-control" formControlName="phoneNumber" placeholder="Enter your phoneNumber" ngModel /> >>>>>>> Stashed changes
+            <input type="phoneNumber " class="form-control" formControlName="phoneNumber" placeholder="Enter your phoneNumber " ngModel> <label>phoneNumber:</label>
+            <input type="phoneNumber" class="form-control" formControlName="phoneNumber" placeholder="Enter your phoneNumber" ngModel />
         </div>
 
         <div class="mb-3">
