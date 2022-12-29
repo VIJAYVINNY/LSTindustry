@@ -9,6 +9,7 @@ import { ShowdataComponent } from './showdata/showdata.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RxjsLearningComponent } from './rxjs-learning/rxjs-learning.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { RxjsLearningComponent } from './rxjs-learning/rxjs-learning.component';
     ContactsComponent,
     ShowdataComponent,
     RxjsLearningComponent,
+    SearchComponent,
   ],
   imports: [
     BrowserModule,
