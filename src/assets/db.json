@@ -269,26 +269,6 @@
             "DOB": "1996-02-02",
             "position": "FullStack Engineer",
             "package": "60.lpa"
-        },
-        {
-            "name": "Giri Babu",
-            "gender": "",
-            "email": "giribabu@gmail.com",
-            "phone": "",
-            "DOB": "2000-12-12",
-            "position": "FrontEnd Engineer",
-            "package": "6lpa",
-            "id": 1257
-        },
-        {
-            "name": "Rithwik",
-            "gender": "",
-            "email": "rithwik@gmail.com",
-            "phone": "",
-            "DOB": "2000-12-12",
-            "position": "QA Engineer",
-            "package": "6lpa",
-            "id": 1258
         }
     ],
     "comments": [{
