@@ -43,45 +43,30 @@
 
         <div class="mb-3">
             <label for="gender">gender:</label>
-            <select name="gender" ngModel class="form-control">
+            <select name="gender" type="gender" ngModel class="form-control">
       <option value="Male">Male</option>
       <option value="Female">Female</option>
       <option value="Trans">Trans</option>
     </select>
-            <label>name:</label>
-            <input type="text" formControlName="name" class="form-control" placeholder="Enter your Name" ngModel /><br />
-        </div>
 
-        <div class="mb-3">
-            <label>gender:</label>
-            <select formControlName="gender" ngModel class="form-control">
-        <option value="Mal">Male</option>
-        <option value="Female">Female</option>
-        <option value="Trans">Trans</option>
-      </select>
-        </div>
+            <div class="mb-3">
+                <label>email:</label>
+                <input type="email" class="form-control" formControlName="email" placeholder="Enter your email" ngModel />
+            </div>
 
-        <div class="mb-3">
-            <label>email:</label>
-            <input type="email" class="form-control" formControlName="email" placeholder="Enter your email" ngModel />
-        </div>
+            <div class="mb-3">
+                <label for="phone">phoneNumber:</label>
+                <input type="phoneNumber" class="form-control" formControlName="phoneNumber" placeholder="Enter your phoneNumber" ngModel>
+            </div>
 
-        <div class="mb-3">
-            <label for="phone">phoneNumber:</label>
-            <input type="phoneNumber" class="form-control" formControlName="phoneNumber" placeholder="Enter your phoneNumber" ngModel> <label>phoneNumber:</label>
-            <input type="phoneNumber" class="form-control" formControlName="phoneNumber" placeholder="Enter your phoneNumber" ngModel />
-        </div>
+            <div class="mb-3">
+                <label>DOB:</label>
+                <input type="date" formControlName="DOB" class="form-control" placeholder="Enter your DOB" ngModel /><br />
+            </div>
 
-        <div class="mb-3">
-            <label>DOB:</label>
-            <input type="date" formControlName="DOB" class="form-control" placeholder="Enter your DOB" ngModel /><br />
-        </div>
-
-        <div class="mb-3">
-            <label for="position">position:</label>
-
-            <label>position:</label>
-            <select name="position" type="text" formControlName="position" ngModel class="form-control">
+            <div class="mb-3">
+                <label for="position">position:</label>
+                <select name="position" type="text" formControlName="position" ngModel class="form-control">
         <option value="Trainee Engineer">Trainee Engineer</option>
         <option value="FrontEnd Engineer">FrontEnd Developer</option>
         <option value="BackEnd Engineer">BackEnd Developer</option>
@@ -90,21 +75,19 @@
         <option value="Admin">Admin</option>
         <option value="Cyber Security">Cyber Security</option>
       </select>
-        </div>
+            </div>
 
-        <div class="mb-3">
-            <label>Package:</label>
-            <input type="string" formControlName="package" class="form-control" placeholder="Enter your package" ngModel /><br />
-        </div>
+            <div class="mb-3">
+                <label>Package:</label>
+                <input type="string" formControlName="package" class="form-control" placeholder="Enter your package" ngModel /><br />
+            </div>
 
-        <button class="btn btn-primary">Adding New User</button>
-    </form>
+            <button class="btn btn-primary">Adding New User</button>
 
-    <!-- <div class="container">
+            <!-- <div class="container">
     <form #userForm="ngForm" (ngSubmit)="getPostData(userForm.value)">
         <label>Name:</label> <input type="text" name="name" placeholder="Enter your Name" ngModel><br><br>
             <label>Email:</label> <input type="email" name="email" placeholder=" Enter your email" ngModel><br><br>
             <label>password:</label> <input type="password" name="password" placeholder="Enter your password" ngModel><br><br>
             <button>Adding New User</button>
     </form> -->
-</div>

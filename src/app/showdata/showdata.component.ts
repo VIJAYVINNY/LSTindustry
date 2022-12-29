@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup ,FormBuilder} from '@angular/forms';
 import { DetailsService } from '../services/details.service';
+import{ShowdataModel}from '../services/posts'
+
 
 @Component({
   selector: 'app-showdata',
@@ -42,10 +44,10 @@ formValue!:FormGroup
 
 //  PUT Method caling
 
-editDetails(id:any){
-
-  // this.detailsService.updateDetails().subscribe(data=>{
-  // })
+editDetails(id:any,data:any){
+this.detailsService.updateDetails(id,data).subscribe(result=>{
+  this.detailList=result
+})
 }
 
 delDetails(){
