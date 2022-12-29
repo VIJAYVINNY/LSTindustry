@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable, of, from, } from 'rxjs';
+import { Observable, of, from,map,tap,take } from 'rxjs';
 
 @Component({
   selector: 'app-rxjs-learning',
@@ -29,12 +29,12 @@ export class RxjsLearningComponent implements OnInit {
   // }
   // details: Observable<any> = of(this.detailObj)
 
-  studentData = ['Viajy', 'Ajay', 'Sanjay', 'Pranay'];
-  teamMates$: Observable<string[]> = of(this.studentData);
+  // studentData = ['Viajy', 'Ajay', 'Sanjay', 'Pranay'];
+  // teamMates$: Observable<string[]> = of(this.studentData);
 
 
-    studentList = ['Viajy', 'Ajay', 'Sanjay', 'Pranay'];
-  students: Observable<string> = from(this.studentList);
+  //   studentList = ['Viajy', 'Ajay', 'Sanjay', 'Pranay'];
+  // students: Observable<string> = from(this.studentList);
 
   ngOnInit(): void {
 
@@ -58,13 +58,13 @@ export class RxjsLearningComponent implements OnInit {
     //   console.log(data);
     // })
 
-    this.students.subscribe(data => {
-      console.log(`The of operator values are:${data}`);
-    })
+    // this.students.subscribe(data => {
+    //   console.log(`The of operator values are:${data}`);
+    // })
 
-    this.teamMates$.subscribe(data => {
-      console.log(`The form opetator values are:${data}`);
-    })
+    // this.teamMates$.subscribe(data => {
+    //   console.log(`The form opetator values are:${data}`);
+    // })
 
 
 
@@ -83,6 +83,30 @@ export class RxjsLearningComponent implements OnInit {
     //  this.coders.subscribe(data => {
     //    console.log(data);
     //  })
+
+    ////map,tap take Operator
+
+ from([22,33,66,11]).pipe(
+  tap(item=>console.log(`given  Value is ${item}`)),
+  map(item=>item*2),
+  map(item=>item-11),
+  map(item=>{
+    if(item==0){
+      throw new Error('Zero is detected');
+    }
+return item;
+  }),
+ ).subscribe({
+      next:item=>console.log(` Modified valieis: ${item}`),
+      error:err=>console.log(`firsrt item is ${err}`),
+      complete:()=>console.log(`Successfully conpleted without any errors`),
+    })
+
+
+
+
+
+
 
   }
 
