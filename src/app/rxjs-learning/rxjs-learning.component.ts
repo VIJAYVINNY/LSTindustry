@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DetailsService } from '../services/details.service';
 import { Observable, of, from,map,tap,take } from 'rxjs';
 
 @Component({
@@ -86,21 +87,21 @@ export class RxjsLearningComponent implements OnInit {
 
     ////map,tap take Operator
 
- from([22,33,66,11]).pipe(
-  tap(item=>console.log(`given  Value is ${item}`)),
-  map(item=>item*2),
-  map(item=>item-11),
-  map(item=>{
-    if(item==0){
-      throw new Error('Zero is detected');
-    }
-return item;
-  }),
- ).subscribe({
-      next:item=>console.log(` Modified valieis: ${item}`),
-      error:err=>console.log(`firsrt item is ${err}`),
-      complete:()=>console.log(`Successfully conpleted without any errors`),
-    })
+//  from([22,33,66,11]).pipe(
+//   tap(item=>console.log(`given  Value is ${item}`)),
+//   map(item=>item*2),
+//   map(item=>item-11),
+//   map(item=>{
+//     if(item==0){
+//       throw new Error('Zero is detected');
+//     }
+// return item;
+//   }),
+//  ).subscribe({
+//       next:item=>console.log(` Modified valieis: ${item}`),
+//       error:err=>console.log(`firsrt item is ${err}`),
+//       complete:()=>console.log(`Successfully conpleted without any errors`),
+//     })
 
 
 
