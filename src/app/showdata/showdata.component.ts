@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup ,FormBuilder} from '@angular/forms';
 import { DetailsService } from '../services/details.service';
-import{ShowdataModel}from '../services/posts'
+import { ShowdataModel } from '../rxjs-learning/rxjs-learning.model';
 
 
 @Component({

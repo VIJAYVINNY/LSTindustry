@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable, of, from,map,tap,take } from 'rxjs';
+import { DetailsService } from '../services/details.service';
+import { Observable, of, from, map, tap, take, takeLast } from 'rxjs';
+import { ShowdataModel } from './rxjs-learning.model';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-rxjs-learning',
@@ -7,16 +10,20 @@ import { Observable, of, from,map,tap,take } from 'rxjs';
   styleUrls: ['./rxjs-learning.component.scss']
 })
 export class RxjsLearningComponent implements OnInit {
+  searchForm!: FormGroup;
 
+  name: FormControl | undefined;
+  readValue(): void {
+  }
   constructor() { }
 
   Observable: any;
 
   coders!: Observable<string>;
 
-//// of Operator Coding
+  //// of Operator Coding
 
-// detailObj = {
+  // detailObj = {
   //   id: 1234,
   //   name: "Phalgua Kumar",
   //   gender: "Male",
@@ -35,6 +42,11 @@ export class RxjsLearningComponent implements OnInit {
 
   //   studentList = ['Viajy', 'Ajay', 'Sanjay', 'Pranay'];
   // students: Observable<string> = from(this.studentList);
+
+  // //take last operator
+
+  categories = ["mobiles", "telephones", "Vehivles", "sports"];
+  category$: Observable<string[]> = of(this.categories);
 
   ngOnInit(): void {
 
@@ -62,10 +74,15 @@ export class RxjsLearningComponent implements OnInit {
     //   console.log(`The of operator values are:${data}`);
     // })
 
-    // this.teamMates$.subscribe(data => {
-    //   console.log(`The form opetator values are:${data}`);
-    // })
+    this.category$.subscribe(data => {
+      this.category$.pipe(
+        takeLast(2)
+      )
+        .subscribe(data2 => {
+          console.log(data2);
+        })
 
+    })
 
 
     // this.coders = new Observable(
@@ -86,27 +103,21 @@ export class RxjsLearningComponent implements OnInit {
 
     ////map,tap take Operator
 
- from([22,33,66,11]).pipe(
-  tap(item=>console.log(`given  Value is ${item}`)),
-  map(item=>item*2),
-  map(item=>item-11),
-  map(item=>{
-    if(item==0){
-      throw new Error('Zero is detected');
-    }
-return item;
-  }),
- ).subscribe({
-      next:item=>console.log(` Modified valieis: ${item}`),
-      error:err=>console.log(`firsrt item is ${err}`),
-      complete:()=>console.log(`Successfully conpleted without any errors`),
-    })
-
-
-
-
-
-
+    //  from([22,33,66,11]).pipe(
+    //   tap(item=>console.log(`given  Value is ${item}`)),
+    //   map(item=>item*2),
+    //   map(item=>item-11),
+    //   map(item=>{
+    //     if(item==0){
+    //       throw new Error('Zero is detected');
+    //     }
+    // return item;
+    //   }),
+    //  ).subscribe({
+    //       next:item=>console.log(` Modified valieis: ${item}`),
+    //       error:err=>console.log(`firsrt item is ${err}`),
+    //       complete:()=>console.log(`Successfully conpleted without any errors`),
+    //     })
 
   }
 
