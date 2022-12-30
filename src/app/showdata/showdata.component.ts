@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup ,FormBuilder} from '@angular/forms';
 import { DetailsService } from '../services/details.service';
+import { ShowdataModel } from '../rxjs-learning/rxjs-learning.model';
+
 
 @Component({
   selector: 'app-showdata',
@@ -35,16 +37,17 @@ formValue!:FormGroup
 // Post calling
   getPostData(data:any){
     this.detailsService.postDetails(data).subscribe(adding=>{
-console.log(adding);
+      this.detailList=data
+    console.log(adding);
     })
   }
 
 //  PUT Method caling
 
-editDetails(id:any){
-
-  // this.detailsService.updateDetails().subscribe(data=>{
-  // })
+editDetails(id:any,data:any){
+this.detailsService.updateDetails(id,data).subscribe(result=>{
+  this.detailList=result
+})
 }
 
 delDetails(){
