@@ -1,6 +1,4 @@
 {
-
-
     "details": [{
             "id": 1230,
             "name": "Vijaya Rani",
@@ -261,6 +259,16 @@
             "position": "",
             "package": "5lpa",
             "id": 1255
+        },
+        {
+            "id": 1256,
+            "name": "Soumya",
+            "gender": "",
+            "email": "soumya@softpath.net",
+            "phone": "",
+            "DOB": "1996-02-02",
+            "position": "FullStack Engineer",
+            "package": "60.lpa"
         }
     ],
     "comments": [{

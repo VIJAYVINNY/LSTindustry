@@ -1,9 +1,6 @@
 import { Injectable } from '@angular/core';
-import {
-  HttpClientModule,
-  HttpClient,
-  HttpHeaders,
-} from '@angular/common/http';
+import {HttpClientModule, HttpClient, HttpHeaders,} from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -17,19 +14,21 @@ export class DetailsService {
 
   constructor(public http: HttpClient) {}
 
-  getDetails() {
-    const httpHeaders = new HttpHeaders();
-    httpHeaders.append('contentType', 'application/json');
+  getDetails():Observable<any> {
+
+    // const httpHeaders = new HttpHeaders();
+    // httpHeaders.append('contentType', 'application/json');
 
     return this.http.get(this.url);
   }
 
-  postDetails(adding: any) {
+  postDetails(adding: any):Observable<any> {
     return this.http.post(this.url, adding);
   }
 
-  updateDetails( id:any,updateData:any,) {
-    const endurl = this.url +"/"+ id;
+  updateDetails( id:any,updateData:any):Observable<any> {
+    // const endurl = this.url+"/"+id;
+    const endurl='http://localhost:3000/details/'+id;
     return this.http.put(endurl, updateData);
   }
 }
