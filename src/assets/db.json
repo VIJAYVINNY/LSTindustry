@@ -290,6 +290,26 @@
       "position": "QA Engineer",
       "package": "6lpa",
       "id": 1258
+    },
+    {
+      "name": "rajya ",
+      "gender": "Female",
+      "email": "rajyalakshmi@gmail.com",
+      "phone": "",
+      "DOB": "2000-12-12",
+      "position": "FullStack Engineer",
+      "package": "6.0lpa",
+      "id": 1259
+    },
+    {
+      "name": "sagar",
+      "gender": "Male",
+      "email": "sagarsansari@gmail.com",
+      "phone": "",
+      "DOB": "1998-12-12",
+      "position": "Cyber Security",
+      "package": "7lpa",
+      "id": 1260
     }
   ],
   "comments": [
