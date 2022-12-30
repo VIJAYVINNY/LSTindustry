@@ -293,6 +293,22 @@
             "package": "6lpa",
             "id": 1258
         }
-    ]
+    ],
 
+    "credentials": [{
+            "id": 1,
+            "username": "Vijay",
+            "email": "vijay1021.gummadi@gmail.com",
+            "password": "Vijay1021@"
+        },
+        {
+            "name": "ajay",
+            "email": "ajay@gmail.com",
+            "password": "Ajay1021@",
+            "id": 2
+        }
+    ],
+    "profile": {
+        "name": "typicode"
+    }
 }
